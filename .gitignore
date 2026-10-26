@@ -1,0 +1,16 @@
+# Keep large datasets and local databases out of Git (as instructed in slides)
+data/
+*.duckdb
+*.duckdb.wal
+
+# Python and Jupyter artifacts
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.venv/
+env/
+
+# Scratch & temp scripts
+test_setup.py
+update_notebook.py
