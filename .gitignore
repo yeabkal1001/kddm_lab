@@ -1,9 +1,5 @@
-# Keep large datasets and local databases out of Git (as instructed in slides)
 data/
-*.duckdb
-*.duckdb.wal
-
-# Python and Jupyter artifacts
+*.duckdb*
 __pycache__/
 *.pyc
 *.pyo
@@ -11,6 +7,15 @@ __pycache__/
 .venv/
 env/
 
-# Scratch & temp scripts
+# Ignore extra materials
+*.pptx
+*.pdf
+!erd_diagram.pdf
+01_*.ipynb
+02_*.ipynb
+* (1).ipynb
+README.md
+generate_erd.py
 test_setup.py
 update_notebook.py
+erd_diagram_light.*
